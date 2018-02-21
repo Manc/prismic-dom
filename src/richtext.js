@@ -72,8 +72,8 @@ function serializeSpan(content) {
 }
 
 export default {
-  asText(structuredText) {
-    return PrismicRichText.asText(structuredText);
+  asText(structuredText, joinString) {
+    return PrismicRichText.asText(structuredText, joinString);
   },
 
   asHtml(richText, linkResolver, htmlSerializer) {
